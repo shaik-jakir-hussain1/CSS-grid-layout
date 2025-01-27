@@ -9,6 +9,13 @@
         .parent{
             display: grid; /* this grid did not create the grid container we specifically define the colums and rows.*/
         }
+        /* Inside the parent container giving the background for even and odd child inside the parent div */
+        .parent>div:nth-child(odd) {
+            background-color: aqua;
+        }
+        .parent>div:nth-child(even) {
+            background-color: rgb(220, 116, 11);
+        }
     </style>
 </head>
 <body>
