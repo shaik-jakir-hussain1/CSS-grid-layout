@@ -8,9 +8,11 @@
     <style>
         .parent{
             display: grid; /* this grid did not create the grid container we specifically define the colums and rows.*/
-            grid-template-columns:  200px 200px 300px; 
+            width: 700x;
+            height: 100vh;
+            grid-template-columns: 1fr 2fr 1fr ; /* Total width in the grid dividing into the fractions (100px/4 25px) */
             /* define how colums(vertically divisions) Inside this  grid*/
-            grid-template-rows: 100px 300px; 
+            grid-template-rows: 1fr 2fr; 
             /* (Horizontal divisions) Inside this  grid */
             grid-gap:30px;  /* Distance between the col-col and row-row */
         }
